@@ -18,3 +18,8 @@ def assign_rooms(clients)
   }
   return room_assignments
 end
+
+def printer(clients)
+  room_assignments = assign_rooms(clients)
+  clients_badge = batch_badge_creator(clients)
+end
