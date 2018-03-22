@@ -26,7 +26,7 @@ def printer(clients)
   room_assignments = assign_rooms(clients)
   clients.each { |val|
     puts clients_badge[clients.index_of(val)]
-    puts room_assignments[index]
+    puts room_assignments[clients.index_of(val)]
     }
 end
 
