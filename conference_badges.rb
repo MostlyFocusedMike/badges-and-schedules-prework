@@ -12,4 +12,4 @@ def batch_badge_creator(clients)
 end
 
 def assign_room(clients)
-  clients.each_with_in
+  clients.each_with_index {|val,index|
