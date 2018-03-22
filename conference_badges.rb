@@ -27,3 +27,4 @@ def printer(clients)
     puts room_assignments[index]
     }
 end
+
