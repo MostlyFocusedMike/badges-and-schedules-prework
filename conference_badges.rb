@@ -22,11 +22,11 @@ def assign_rooms(clients)
 end
 
 def printer(clients)
-  # clients_badge = batch_badge_creator(clients)
-  # room_assignments = assign_rooms(clients)
-  clients.each { |val|
-    puts batch_badge_creator(clients)[clients.index(val)]
-    puts assign_rooms(clients)[clients.index(val)]
+  clients_badge = batch_badge_creator(clients)
+  room_assignments = assign_rooms(clients)
+  clients.each_with_index { |val,index|
+    puts clients_badge[index]
+    puts room_assignments[index]
     }
 end
 
