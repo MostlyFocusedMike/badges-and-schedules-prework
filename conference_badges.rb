@@ -20,6 +20,8 @@ def assign_rooms(clients)
 end
 
 def printer(clients)
-  room_assignments = assign_rooms(clients)
+  assign_rooms(clients).each |msg|
+    puts msg
+    }
   clients_badge = batch_badge_creator(clients)
 end
