@@ -25,8 +25,8 @@ def printer(clients)
   clients_badge = batch_badge_creator(clients)
   room_assignments = assign_rooms(clients)
   clients.each { |val|
-    puts clients_badge[clients.index_of(val)]
-    puts room_assignments[clients.index_of(val)]
+    puts clients_badge[clients.index(val)]
+    puts room_assignments[clients.index(val)]
     }
 end
 
