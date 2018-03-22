@@ -1,3 +1,5 @@
+require "Benchmark"
+
 clients = %w(Edsger Ada Charles Alan Grace Linus Matz)
 def badge_maker(name)
   return "Hello, my name is #{name}."
@@ -28,3 +30,4 @@ def printer(clients)
     }
 end
 
+puts Benchmark.measure {printer(clients)}
